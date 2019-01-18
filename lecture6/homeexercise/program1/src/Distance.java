@@ -1,42 +1,40 @@
-/* Author : Aashima
-Version : 1.0.0
-Purpose :1.	Write a program to read two distances in feet and inches and find their sum. */
-import java.util.*;
 class Distance
 {
-	float feet;
-	float inch;
-	float f;
-	float i;
+	private float f;//f = feeti =inch
+	private float i;
+	
 	Distance()
 	{
-		this.feet=0;
-		this.inch=0;
-
+	this.f=0;
+	this.i=0;
 	}
-	Distance(float f , float i)
+
+	Distance(float f,float i)
 	{
-		this.feet=f;
-		this.inch=i;
+	this.f=f;
+	this.i=i;
 	}
-	void getDistance(){
-		this.feet = f;
-		this.inch = i;
-	}
-
-	void setDistance(float f , float i)
+	void setValuex(float f)
 	{
-		feet =f;
-		inch =i;
+	this.f=f;
 	}
-	void setDistance(){
-		System.out.println("entered distance is "+ feet +" feet " +inch+" inches ");
+	void setValuey(float i)
+	{
+	this.i=i;
 	}
-	void sum(Distance d){
-		float sumfeet = this.feet + d.feet;
-		float suminch = this.inch + d.inch + (inch/12);
-		inch = inch%12;
-
-		System.out.println(" total distance is "+ sumfeet + " feet " + suminch +"inches");
+	float getValuef()
+	{
+	return f;
+	}
+	float getValuei()
+	{
+	return i;
+	}
+	void sum(Distance d1, Distance d2)
+	{
+		float sumf = d1.f + d2.f;
+		float sumi = d1.i + d2.i + (i/12);
+		i = i%12;
+        System.out.println(" total distance is "+ sumf+ " feet " + sumi +"inches");
 	}
 }
