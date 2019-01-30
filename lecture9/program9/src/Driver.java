@@ -2,10 +2,10 @@ class Driver
 {
 	public static void main(String[] args)
 	{
-		Method o = new Method();
+		Method obj = new Method();
 		try
 		{
-			o.f();
+			obj.f();
 		}
 		catch (ExceptionInF e)
 		{
